@@ -18,6 +18,9 @@
 
 			eventtype = mobilecheck() ? 'touchstart' : 'click',
 			resetMenu = function() {
+				//back to orginale mode
+				document.getElementById("sadeq").style.marginLeft = "0%";
+				document.getElementById("logo").style.bottom = "0%";
 				classie.remove( menu, 'bt-menu-open' );
 				classie.add( menu, 'bt-menu-close' );
 			},
@@ -26,7 +29,7 @@
 				overlay.removeEventListener( eventtype, closeClickFn );
 			};
 
-		
+
 
 		trigger.addEventListener( eventtype, function( ev ) {
 			ev.stopPropagation();
@@ -36,6 +39,9 @@
 				resetMenu();
 			}
 			else {
+				//zoom in when click on menu bar
+				document.getElementById("sadeq").style.marginLeft = "10%";
+				document.getElementById("logo").style.bottom = "6%";
 				classie.remove( menu, 'bt-menu-close' );
 				classie.add( menu, 'bt-menu-open' );
 				// overlay.addEventListener( eventtype, closeClickFn );
