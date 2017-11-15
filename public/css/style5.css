@@ -238,3 +238,7 @@ body  {
 .bt-menu ul li a:focus:before {
 	color: #1abc9c;
 }
+.flag{
+  text-align: center;
+  color: white;
+}

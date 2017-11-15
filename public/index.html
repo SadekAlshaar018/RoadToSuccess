@@ -31,7 +31,7 @@
 
     <div id="chartwrapper">
         <div id="chartdiv"></div>
-
+<div id="sadeq">
         <select onchange="selectArea(this);" id="provence" class="selectpicker" data-live-search="true">
             <option value="">All Provences</option>
             <option value="NL-DR">Drenthe</option>
@@ -47,7 +47,9 @@
             <option value="NL-NB">Noord-Brabant</option>
             <option value="NL-ZE">Zeeland</option>
         </select>
+</div>
         <img src="/logo.png" id="logo" />
+
     </div>
 
 
@@ -100,7 +102,7 @@
 <!-- MENUBAR -->
 <div class="container">
 <nav id="bt-menu" class="bt-menu">
-				<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+				<a href="#" class="bt-menu-trigger" onclick="w3_open()"><span>Menu</span></a>
 				<ul>
 					<li><a href="#">About us</a></li>
 					<li><a href="#">Work</a></li>
@@ -108,10 +110,11 @@
 					<li><a href="#">Blog</a></li>
 					<li><a href="#">Contact</a></li>
           <div>
-          <li>
+          <li class="flag">
               <img src="http://icons.iconarchive.com/icons/hopstarter/flag-borderless/24/England-icon.png"></img><br>
         	    <img src="http://icons.iconarchive.com/icons/hopstarter/flag-borderless/24/Romania-icon.png"></img><br>
-        	    <img src="http://icons.iconarchive.com/icons/hopstarter/flag-borderless/24/Netherlands-icon.png"></img>
+        	    <img src="http://icons.iconarchive.com/icons/hopstarter/flag-borderless/24/Netherlands-icon.png"></img><br>
+              <p>&copy; Copy Right 2017</p>
         </li>
         </div>
         </ul>
@@ -136,5 +139,11 @@
     <!-- JAVASCRIPT MEUNBAR -->
     <script src="js/classie.js"></script>
 	  <script src="js/borderMenu.js"></script>
+    <script>
+      function w3_open(){
+        document.getElementById("logo").style.marginBottom = "3%";
+        document.getElementById("sadeq").style.marginLeft = "10%";
+      }
+    </script>
 </body>
 </html>
