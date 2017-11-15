@@ -41,7 +41,7 @@
 			else {
 				//zoom in when click on menu bar
 				document.getElementById("sadeq").style.marginLeft = "10%";
-				document.getElementById("logo").style.bottom = "6%";
+				document.getElementById("logo").style.bottom = "6.5%";
 				classie.remove( menu, 'bt-menu-close' );
 				classie.add( menu, 'bt-menu-open' );
 				// overlay.addEventListener( eventtype, closeClickFn );
