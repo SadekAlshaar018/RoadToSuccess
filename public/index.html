@@ -1,145 +1,244 @@
 <!DOCTYPE HTML>
 <html lang=en>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Menu Border">
-    <meta name="keywords" content="HTML,CSS,JavaScript">
-    <meta content="" name="description">
-    <meta content="RestartNetwork" name="author">
-    <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Menu Border">
+  <meta name="keywords" content="HTML,CSS,JavaScript">
+  <meta content="" name="description">
+  <meta content="RestartNetwork" name="author">
+  <title></title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
-    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/ammap.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="/main.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"/>
+  <link rel="stylesheet" href="https://www.amcharts.com/lib/3/ammap.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="/main.css" />
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- MENUBAR -->
-    <link rel="stylesheet" type="text/css" href="css/icons.css" />
-    <link rel="stylesheet" type="text/css" href="css/style5.css" />
-    <script src="js/modernizr.custom.js"></script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <!-- MENUBAR -->
+  <link rel="stylesheet" type="text/css" href="css/icons.css" />
+  <link rel="stylesheet" type="text/css" href="css/style5.css" />
+  <script src="js/modernizr.custom.js"></script>
+  <!-- social media menubar linkes -->
+  <!-- <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'> -->
+
+  <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <style>
+	a {
+  color: #fff;
+  text-decoration: none;
+}
+.me {
+  width: 400px;
+  margin: 90px auto;
+}
+
+.social {
+  position: fixed;
+  top: 20px;
+}
+.social ul {
+  padding: 200px;
+	margin: 23px;
+  -webkit-transform: translate(-270px, 0);
+  -moz-transform: translate(-270px, 0);
+  -ms-transform: translate(-270px, 0);
+  -o-transform: translate(-270px, 0);
+  transform: translate(-270px, 0);
+}
+.social ul li {
+  display: block;
+  margin: 5px;
+	background: red;
+  /*background: rgba(0, 0, 0, 0.36);*/
+  width: 30px;
+  text-align: left;
+  padding: 10px;
+  -webkit-border-radius: 40px 0px 0px 40px;
+  -moz-border-radius: 40px 0px 0px 40px;
+  border-radius: 40px 0px 0px 40px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+/*.social ul li:hover {
+  -webkit-transform: translate(110px, 0);
+  -moz-transform: translate(110px, 0);
+  -ms-transform: translate(110px, 0);
+  -o-transform: translate(110px, 0);
+  transform: translate3d(-110px, 0px,-100px);
+  background: rgb(103, 183, 220);
+}
+.social ul li:hover a {
+  color: #000;
+}
+.social ul li:hover i {
+  color: #fff;
+  background: red;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}*/
+.social ul li i {
+  margin-left: 10px;
+  color: #000;
+  background: #fff;
+  padding: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  background: #ffffff;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+#mocha{
+	position: fixed;
+	right: -12px;
+}
+</style>
 </head>
 <body>
-
-    <div id="chartwrapper">
-        <div id="chartdiv"></div>
-<div id="sadeq">
-        <select onchange="selectArea(this);" id="provence" class="selectpicker" data-live-search="true">
-            <option value="">All Provences</option>
-            <option value="NL-DR">Drenthe</option>
-            <option value="NL-FR">Friesland</option>
-            <option value="NL-GR">Groningen</option>
-            <option value="NL-OV">Overijssel</option>
-            <option value="NL-FL">Flevoland</option>
-            <option value="NL-NH">Noord-Holland</option>
-            <option value="NL-GE">Gelderland</option>
-            <option value="NL-UT">Utrecht</option>
-            <option value="NL-ZH">Zuid-Holland</option>
-            <option value="NL-LI">Limburg</option>
-            <option value="NL-NB">Noord-Brabant</option>
-            <option value="NL-ZE">Zeeland</option>
-        </select>
-</div>
-        <img src="/logo.png" id="logo" />
-
+  <div id="chartwrapper">
+    <div id="chartdiv"></div>
+    <div id="sadeq">
+      <select onchange="selectArea(this);" id="provence" class="selectpicker" data-live-search="true">
+        <option value="">All Provences</option>
+        <option value="NL-DR">Drenthe</option>
+        <option value="NL-FR">Friesland</option>
+        <option value="NL-GR">Groningen</option>
+        <option value="NL-OV">Overijssel</option>
+        <option value="NL-FL">Flevoland</option>
+        <option value="NL-NH">Noord-Holland</option>
+        <option value="NL-GE">Gelderland</option>
+        <option value="NL-UT">Utrecht</option>
+        <option value="NL-ZH">Zuid-Holland</option>
+        <option value="NL-LI">Limburg</option>
+        <option value="NL-NB">Noord-Brabant</option>
+        <option value="NL-ZE">Zeeland</option>
+      </select>
     </div>
-
-
-<div id="userInfo">
+    <img src="/logo.png" id="logo" />
+  </div>
+  <div id="userInfo">
     <div id="briefUserInfo">
       <div class="content">
-          <div class="item active">
-              <blockquote>
-                  <div class="row">
-                      <div class="col-sm-3 text-center">
-                          <img class="img-circle" src="http://www.reactiongifs.com/r/overbite.gif" style="width: 100px;height:100px;">
-                          <a href="#" class="btn btn-primary">Interview</a>
-                      </div>
-                      <div class="col-sm-9">
-                          <span class="name">Someone famous</span>
-                          <div class="desc">
-                              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
-                              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
-                              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
-                          </div>
-                          <a href="#" class="close">X</a>
-                      </div>
-                  </div>
-              </blockquote>
-          </div>
+        <div class="item active">
+          <blockquote>
+            <div class="row">
+              <div class="col-sm-3 text-center">
+                <img class="img-circle" src="http://www.reactiongifs.com/r/overbite.gif" style="width: 100px;height:100px;">
+                <a href="#" class="btn btn-primary">Interview</a>
+              </div>
+              <div class="col-sm-9">
+                <span class="name">Someone famous</span>
+                <div class="desc">
+                  <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+                  <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+                  <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+                </div>
+                <a href="#" class="close">X</a>
+              </div>
+            </div>
+          </blockquote>
+        </div>
       </div>
     </div>
 
     <div id="briefUserList">
-        <div class="person">
-            <img class="pull-left" width="50px" height="50px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWZiNmY0YjQyOSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZmI2ZjRiNDI5Ij48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA1NDY4NzUiIHk9Ijc0LjUiPjE0MHgxNDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt="name" class="img-thumbnail">
-            <div class="pull-left name">
-                User Number One<br/>
-                Published on 10/02/2017 at 13:20
-            </div>
-            <a href="#" class="btn btn-info btn-xs pull-right">See More</a>
+      <div class="person">
+        <img class="pull-left" width="50px" height="50px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWZiNmY0YjQyOSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZmI2ZjRiNDI5Ij48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA1NDY4NzUiIHk9Ijc0LjUiPjE0MHgxNDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt="name" class="img-thumbnail">
+        <div class="pull-left name">
+          User Number One<br/>
+          Published on 10/02/2017 at 13:20
         </div>
-        <div class="clearfix"></div>
-        <div class="person">
-            <img class="pull-left" width="50px" height="50px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWZiNmY0YjQyOSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZmI2ZjRiNDI5Ij48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA1NDY4NzUiIHk9Ijc0LjUiPjE0MHgxNDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt="name" class="img-thumbnail">
-            <div class="pull-left name">
-                User Number One<br/>
-                Published on 10/02/2017 at 13:20
-            </div>
-            <a href="#" class="btn btn-info btn-xs pull-right">See More</a>
+        <a href="#" class="btn btn-info btn-xs pull-right">See More</a>
+      </div>
+      <div class="clearfix"></div>
+      <div class="person">
+        <img class="pull-left" width="50px" height="50px" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWZiNmY0YjQyOSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZmI2ZjRiNDI5Ij48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA1NDY4NzUiIHk9Ijc0LjUiPjE0MHgxNDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt="name" class="img-thumbnail">
+        <div class="pull-left name">
+          User Number One<br/>
+          Published on 10/02/2017 at 13:20
         </div>
-        <div class="clearfix"></div>
+        <a href="#" class="btn btn-info btn-xs pull-right">See More</a>
+      </div>
+      <div class="clearfix"></div>
     </div>
-</div>
-<!-- MENUBAR -->
-<div class="container">
-<nav id="bt-menu" class="bt-menu">
-				<a href="#" class="bt-menu-trigger" ><span>Menu</span></a>
-				<ul>
-					<li><a href="#">About us</a></li>
-					<li><a href="#">Work</a></li>
-					<li><a href="#">Clients</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact</a></li>
-          <div>
+
+  <!-- MENUBAR -->
+  <div class="container">
+    <nav id="bt-menu" class="bt-menu">
+      <a href="#" class="bt-menu-trigger" ><span>Menu</span></a>
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <div>
           <li class="flag">
-              <img src="http://icons.iconarchive.com/icons/hopstarter/flag-borderless/24/England-icon.png"></img><br>
-        	    <img src="http://icons.iconarchive.com/icons/hopstarter/flag-borderless/24/Romania-icon.png"></img><br>
-        	    <img src="http://icons.iconarchive.com/icons/hopstarter/flag-borderless/24/Netherlands-icon.png"></img><br>
-              <p>&copy; Copy Right 2017</p>
-        </li>
+            <img src="http://icons.iconarchive.com/icons/hopstarter/flag-borderless/24/England-icon.png"></img><br>
+            <img src="http://icons.iconarchive.com/icons/hopstarter/flag-borderless/24/Romania-icon.png"></img><br>
+            <img src="http://icons.iconarchive.com/icons/hopstarter/flag-borderless/24/Netherlands-icon.png"></img><br>
+            <p>&copy; Copy Right 2017</p>
+          </li>
         </div>
-        </ul>
-				<ul>
-					<li><a href="http://www.twitter.com/codrops" class="bt-icon icon-twitter">Twitter</a></li>
-					<li><a href="https://plus.google.com/101095823814290637419" class="bt-icon icon-gplus">Google+</a></li>
-					<li><a href="http://www.facebook.com/pages/Codrops/159107397912" class="bt-icon icon-facebook">Facebook</a></li>
-					<li><a href="https://github.com/codrops" class="bt-icon icon-github">icon-github</a></li>
-					<!-- <li><a>© 2016 Company,Inc.</a></li> -->
-				</ul>
-			</nav>
-		</div>
+      </ul>
+      <ul>
+        <li><a href="http://www.twitter.com/codrops" class="bt-icon icon-twitter">Twitter</a></li>
+        <li><a href="https://plus.google.com/101095823814290637419" class="bt-icon icon-gplus">Google+</a></li>
+        <li><a href="http://www.facebook.com/pages/Codrops/159107397912" class="bt-icon icon-facebook">Facebook</a></li>
+        <li><a href="https://github.com/codrops" class="bt-icon icon-github">icon-github</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- social media menubar -->
+  <div id="mocha">
+    <nav class="social">
+      <ul>
+        <li><a href="http://www.twitter.com/codrops" class="bt-icon icon-twitter"></a></li>
+        <li><a href="https://plus.google.com/101095823814290637419" class="bt-icon icon-gplus"></a></li>
+        <li><a href="http://www.facebook.com/pages/Codrops/159107397912" class="bt-icon icon-facebook"></a></li>
+        <li><a href="https://github.com/codrops" class="bt-icon icon-github"></a></li>
+      </ul>
+    </nav>
+  </div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
-    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
-    <script src="https://www.amcharts.com/lib/3/maps/js/netherlandsLow.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
-    <script src="/main.js"></script>
-    <!-- JAVASCRIPT MEUNBAR -->
-    <script src="js/classie.js"></script>
-	  <script src="js/borderMenu.js"></script>
-    <!-- temp functions for menubar -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+  <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+  <script src="https://www.amcharts.com/lib/3/maps/js/netherlandsLow.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+  <script src="/main.js"></script>
+  <!-- JAVASCRIPT MEUNBAR -->
+  <script src="js/classie.js"></script>
+  <script src="js/borderMenu.js"></script>
+  <!-- temp functions for menubar -->
+
 
 </body>
 </html>
